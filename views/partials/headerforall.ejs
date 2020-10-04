@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Healthy Life</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400' rel="stylesheet" type="text/css">
+    <link href='css/home.css' rel="stylesheet" type="text/css">
+	   <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top" style="background-color: white;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+    </button>
+		
+    <a class="navbar-brand" href="/">
+		<h2>
+	  		HealthyLife
+	  	</h2>
+	</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="/about">About Us <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item active">
+		  <a class="nav-link" href="/doctors">Doctors<span class="sr-only"></span></a>
+      </li>
+    </ul>
+    <!-- <form class="form-inline my-0 my-lg-0" action="/login" method="get">
+      <button class="btn btn-info my-2 my-sm-0" type="submit">Login</button>
+    </form> -->
+	  <span><%= user.username %>, You are Logged In as <%= user.type %></span>
+  </div>
+		
+</nav>

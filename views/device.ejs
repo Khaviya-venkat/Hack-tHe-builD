@@ -1,0 +1,42 @@
+<%- include ("partials/headerforall") %>
+
+<!-- <!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+      <script src="script.js" type="text/javascript"></script>
+   </head>
+   <body> -->
+      <meta charset="utf-8">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+      <script src="/js/script.js" type="text/javascript"></script>
+      <link rel="stylesheet" href="css/device.css">
+
+      <div class="wrapper">
+         <h1 id="device">Device</h1>
+         <form id="connection-information-form">
+			 <span id="display">
+				 <p>
+					 Device ID: <%=  %>
+				 </p>
+				 <p>
+					 Patient Name: <%= user.username %>
+				 </p>
+				 <p>
+					 Doctor Name: 
+				 </p>
+			 </span>
+
+            <!-- <input id="topic" type="text" name="topic" value="#"><br><br>			  -->
+            <input type="button" class="btn btn-info my-2 my-sm-0" onclick="Connecting()" value="Connect">
+            <input type="button" class="btn btn-info my-2 my-sm-0" onclick="Disconnecting()" value="Disconnect">
+         </form>
+         <div id="status"></div>
+         <div id="messages"></div>
+         <div id="data"></div>
+      </div>
+
+<%- include ("partials/footer") %>

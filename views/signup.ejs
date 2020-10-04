@@ -1,0 +1,37 @@
+<%- include ("partials/header") %>
+
+<!-- <html>
+	<head>
+		<title>----</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="shortcut icon" href="pandaa.png">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400' rel="stylesheet" type="text/css">
+	<link href='css/signup.css' rel="stylesheet" type="text/css">
+	</head>
+	<body> -->
+
+	<link rel="stylesheet" type="text/css" href="css/signup.css">
+
+		<div class="container border">
+			<h1 >
+				HealthyLife
+			</h1>
+			<h4>
+				Sign up to join 
+			</h4>
+			<form action="/signup" method="post">
+				<input type="text" class="input" name="username" placeholder="Username" size="30" required>
+				<input type="password" class="input" name="password" placeholder="Password" size="30" required>
+				<input type="email" name="email" class="input" pattern=".+@gmail.com" placeholder="Email" size="30" required>
+				
+				<button class="login form-control btn btn-info button btn-block" >
+					Sign Up
+				</button>
+			</form>
+	    <hr style="width:45%;float:left"><span style="float:left;padding-top:3px;padding-left:5px">OR</span><hr style="width:45%;float:left">
+			<br>
+			<br>
+               <a href="/login">Log In!</a>
+		</div>
+
+<%- include ("partials/footer") %>
